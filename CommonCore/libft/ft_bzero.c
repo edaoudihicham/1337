@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 13:13:55 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 13:15:31 by hdaoudi          ###   ########.fr       */
+/*   Created: 2024/10/24 13:37:05 by hdaoudi           #+#    #+#             */
+/*   Updated: 2024/10/24 13:39:12 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-
-int	ft_isalpha(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	unsigned char	*temp;
+
+	temp = (unsigned char *)s;
+	while (n)
+	{
+		*temp++ = 0;
+		n--;
+	}
 }

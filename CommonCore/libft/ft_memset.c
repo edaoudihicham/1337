@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 13:13:55 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 13:15:31 by hdaoudi          ###   ########.fr       */
+/*   Created: 2024/10/24 13:32:35 by hdaoudi           #+#    #+#             */
+/*   Updated: 2024/10/24 13:36:26 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-
-int	ft_isalpha(int c)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	unsigned char	*temp;
+
+	temp = (unsigned char *)b;
+	while (len)
+	{
+		*temp++ = (unsigned char)c;
+		len--;
+	}
+	return (b);
 }

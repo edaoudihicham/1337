@@ -33,20 +33,6 @@ size_t ft_strlen(const char *s)
 	return(i);
 }
 
-int ft_toupper(int c)
-{
-	if(c >= 'a' && c <= 'z')
-	{
-		c = c - 32;
-	}
-	return (c);
-}
-int ft_tolower(int c)
-{
-	if( c >= 'A' && c <= 'Z')
-		c = c + 32;
-	return (c);
-}
 
 void *ft_memset(void *b, int c, size_t len)
 {
@@ -84,6 +70,27 @@ void *ft_memcpy(void *dst, const void *src, size_t n)
 
 }
 
+
+
+
+
+
+
+
+int ft_toupper(int c)
+{
+	if(c >= 'a' && c <= 'z')
+	{
+		c = c - 32;
+	}
+	return (c);
+}
+int ft_tolower(int c)
+{
+	if( c >= 'A' && c <= 'Z')
+		c = c + 32;
+	return (c);
+}
 
 
 

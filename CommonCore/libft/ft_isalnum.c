@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 13:13:55 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 13:15:31 by hdaoudi          ###   ########.fr       */
+/*   Created: 2024/10/24 13:21:38 by hdaoudi           #+#    #+#             */
+/*   Updated: 2024/10/24 14:42:50 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-
-int	ft_isalpha(int c)
+int ft_isalnum (int c)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+    if (c == EOF)
+        return (0);
+        
+    unsigned char n;
+
+    n = (unsigned char) c;
+    
+    return (((n >= 'a' && n <= 'z') || (n >= 'A' && n <= 'Z')) || (n >= '0' && n <= '9'));
+    // return ( ft_isalpha (n) || ft_isdigit (n));
 }
