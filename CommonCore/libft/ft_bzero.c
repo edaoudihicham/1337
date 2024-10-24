@@ -6,9 +6,11 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:37:05 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 13:39:12 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/24 14:52:41 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

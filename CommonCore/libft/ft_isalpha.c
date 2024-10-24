@@ -6,11 +6,11 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:13:55 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 13:15:31 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/24 15:22:27 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

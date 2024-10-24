@@ -6,8 +6,13 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:52:19 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 13:52:23 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/24 15:07:14 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void *ft_memchr(const void *s, int c, size_t n)
+{
+    
+}

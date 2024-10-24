@@ -6,6 +6,13 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:53:00 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 13:53:12 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/24 15:09:29 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
+char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+    
+}

@@ -6,7 +6,12 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:47:56 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 13:50:00 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/24 14:55:33 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+ft_memmove(void *dst, const void *src, size_t len)
+{
+    
+}
