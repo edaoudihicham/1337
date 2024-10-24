@@ -1,8 +1,9 @@
 #ifndef HEADER_H
 #define HEADER_H
 
+#include <stdlib.h>
 //#include <stddef.h>
-typedef unsigned long size_t;
+//typedef unsigned long size_t;
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);

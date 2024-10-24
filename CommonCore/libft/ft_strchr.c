@@ -6,12 +6,17 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:51:24 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 15:03:57 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/24 19:15:02 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
 
 char *ft_strchr(const char *s, int c)
 {
-    
+	while ()
+	{
+		
+	}
+	return (NULL);
 }
