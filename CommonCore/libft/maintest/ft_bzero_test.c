@@ -1,18 +1,7 @@
 #include <stdio.h>
 #include <string.h> // for memset
 
-void	ft_bzero(void *s, size_t n)
-{
-	unsigned char	*temp;
-
-	temp = (unsigned char *)s;
-	while (n)
-	{
-		*temp++ = 0;
-		n--;
-	}
-}
-
+#include "../ft_bzero.c"
 
 // Function to print memory for verification
 void print_buffer(unsigned char *buffer, size_t size) {

@@ -3,6 +3,8 @@
 #include <string.h>  // For memset and memcmp
 
 #include "../ft_calloc.c"
+
+
 void run_test(size_t nmemb, size_t size) {
     printf("Testing ft_calloc with %zu elements of %zu bytes each\n", nmemb, size);
 
