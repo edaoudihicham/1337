@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:37:05 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/29 22:33:24 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/29 22:36:04 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	//unsigned char	*temp;
-
-//	temp = (unsigned char *)s;
-
 	ft_memset(s, 0, n);
 }
