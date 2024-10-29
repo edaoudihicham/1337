@@ -2,7 +2,7 @@
 #define HEADER_H
 
 #include <stdlib.h>
-//#include <stddef.h>
+#include <stddef.h>
 //typedef unsigned long size_t;
 
 int	ft_isalpha(int c);
