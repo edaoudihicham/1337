@@ -1,4 +1,6 @@
-NAME = my_program
+CC= cc 
+CFLAGS= -Wall -Wextra -Werror
+NAME = libft.a
 
 all: $(NAME)
 
