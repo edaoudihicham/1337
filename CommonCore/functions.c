@@ -91,11 +91,3 @@ int ft_tolower(int c)
 		c = c + 32;
 	return (c);
 }
-
-
-
-// char o = '0';
-// int x = (int)o;
-
-// char *str = "yassine";
-// void t = (void*)str;

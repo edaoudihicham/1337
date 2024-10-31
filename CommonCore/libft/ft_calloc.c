@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:53:46 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/29 13:00:22 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/30 23:32:00 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,6 @@ void *ft_calloc(size_t count, size_t size)
     {
         return (NULL);
     }
-	
-	/*int i;
-	
-	i = 0;
-	while(i < (count * size))
-	{
-		str[i] = 0;
-		i++;
-	}*/
 	ft_bzero(str, count * size);
 	return (str);
 }
