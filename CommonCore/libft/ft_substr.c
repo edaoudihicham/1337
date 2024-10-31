@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 17:58:26 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/31 19:10:35 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/31 19:12:41 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*ptr;
 	size_t	slen;
 
-	if (s == NULL || start >= ft_strlen(s))
+	if (s == NULL || start > ft_strlen(s))
 	{
 		return (ft_strdup(""));
 	}
