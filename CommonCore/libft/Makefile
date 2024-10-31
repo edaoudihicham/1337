@@ -6,7 +6,7 @@
 #    By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/31 16:42:51 by hdaoudi           #+#    #+#              #
-#    Updated: 2024/10/31 18:12:56 by hdaoudi          ###   ########.fr        #
+#    Updated: 2024/10/31 20:21:04 by hdaoudi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 %.o: %.c libft.h
-	$(CC) $(CFLAGS) -c $< -o $@ -I
+	$(CC) $(CFLAGS) -c $< -o $@ -I.
 
 $(NAME): $(OBJ)
 	ar -rcs $(NAME) $(OBJ)
@@ -38,3 +38,4 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+ss
