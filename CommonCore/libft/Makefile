@@ -2,15 +2,19 @@ CC= cc
 CFLAGS= -Wall -Wextra -Werror
 NAME = libft.a
 
+SRC = .c use wildcard
+OBJ = .o
+
 all: $(NAME)
 
 $(NAME): main.o helper.o
-	gcc -o $(NAME) main.o helper.o
-
+	gcc -c $(NAME) main.o helper.o -I
+	ar -rc
+	ranlib
 clean:
-	rm -f *.o
+	-rm *.o
 
 fclean: clean
-	rm -f $(NAME)
+	rm $(NAME)
 
 re: fclean all
