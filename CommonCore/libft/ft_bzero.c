@@ -6,13 +6,11 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:37:05 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/29 22:36:04 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/31 16:37:23 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-#include "ft_memset.c"
 
 void	ft_bzero(void *s, size_t n)
 {

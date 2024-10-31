@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:26:59 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 14:50:50 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/31 16:40:29 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	i ;
+	size_t	i;
 
-	i = 0 ;
+	i = 0;
 	while (s[i])
 	{
 		i++;

@@ -6,15 +6,13 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:48:28 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/30 18:54:42 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/31 16:40:13 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_strlen.c"
-
 #include "libft.h"
 
-size_t  ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize)
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
 	unsigned int	i;
 	unsigned int	j;
@@ -31,7 +29,7 @@ size_t  ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsiz
 	srclen = ft_strlen(src);
 	if (dstsize == 0 || dstsize <= destlen)
 		return (srclen + dstsize);
-	while (src [i] != '\0' && i < dstsize - destlen - 1)
+	while (src[i] != '\0' && i < dstsize - destlen - 1)
 	{
 		dst[j] = src[i];
 		i++;

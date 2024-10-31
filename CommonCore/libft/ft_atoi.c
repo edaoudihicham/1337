@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi_______temp.c                               :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:53:28 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/29 12:55:27 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/31 16:38:06 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(const char *str)
+#include "libft.h"
+
+int	ft_atoi(const char *str)
 {
-	int			i;
-	int			sign;
-	long		r;
+	int		i;
+	int		sign;
+	long	r;
 
 	i = 0;
 	r = 0;
 	sign = 1;
-	
 	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
 		i++;
-
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')

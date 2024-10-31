@@ -6,13 +6,15 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:50:33 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/24 22:44:55 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/31 16:40:52 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+#include "libft.h"
+
+int	ft_tolower(int c)
 {
-	if( c >= 'A' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		c = c + 32;
 	return (c);
 }
