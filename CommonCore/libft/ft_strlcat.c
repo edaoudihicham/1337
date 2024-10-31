@@ -6,13 +6,13 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:48:28 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/31 16:40:13 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/31 17:13:08 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	unsigned int	i;
 	unsigned int	j;

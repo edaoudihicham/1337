@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:41:21 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/31 16:47:40 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/10/31 17:12:54 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src,
+size_t	ft_strlcpy(char *dst, const char *src,
 			size_t dstsize);
-size_t	ft_strlcat(char *restrict dst, const char *restrict src,
+size_t	ft_strlcat(char *dst, const char *src,
 			size_t dstsize);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
