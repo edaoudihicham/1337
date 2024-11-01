@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 21:53:51 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/01 15:43:06 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/01 15:49:10 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,3 +65,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 // if s1 and set have the same chars
 // if both are empty only '\0'
 // if both are NULL
+// one character found, means start = finish and finish doesn't equal zero
