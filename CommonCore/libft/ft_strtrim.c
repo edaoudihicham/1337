@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 21:53:51 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/01 15:04:13 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/01 15:43:06 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (isfound(s1[i], set) && i)
 		i--;
 	finish = i;
-	if (finish >= start)
+	if (finish >= start && finish)
 		finish = finish - start + 1;
 	str = (char *)malloc((finish + 1) * (sizeof(char)));
 	if (str == NULL)
@@ -55,3 +55,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[finish] = '\0';
 	return (str);
 }
+
+// int main()
+// {
+// 	printf("%s", ft_strtrim("shichams","    hm    "));
+// 	return 0;
+// }
+
+// if s1 and set have the same chars
+// if both are empty only '\0'
+// if both are NULL
