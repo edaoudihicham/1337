@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:57:19 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/01 20:17:16 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/01 22:37:12 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,15 @@ int countwords(char const *s, char c)
 	}
 	return (j);
 }
-// char	**ft_split(char const *s, char c)
-// {
-// }
+
+
+char	**ft_split(char const *s, char c)
+{
+	char **ptr;
+	**ptr = (char **)malloc(sizeof(*s) * countwords(*s, c));
+	if (**ptr == NULL)
+		return (NULL);
+}
 
 int main ()
 {
