@@ -6,34 +6,52 @@
 /*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:57:19 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/02 15:19:04 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/02 15:59:39 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 #include <stdio.h>
-int countwords(char const *s, char c)
+int countwords(const char *s, char c)
 {
 	int i;
-	int j;
+	int count;
 
 	i = 0;
-	j = 0;
+	count = 0;
 	while(s[i])
 	{
-		if ()
-		i++;
+		while (s[i] == c)
+			i++;
+		if(s[i] != c)
+			count++;
+		while (s[i] != c && s[i])
+			i++;
 	}
-	return (j);
+	return (count);
 }
 
-// char	**ft_split(char const *s, char c)
-// {
-// 	char **ptr;
+char	**ft_split(char const *s, char c)
+{
+	char **ptr;
+	int i;
+	int count;
+	int length;
 
-// 	ptr = (char **)malloc(sizeof(*s) * countwords(*s, c)); 
-// 	if (ptr == NULL)
-// 		return (NULL);
+	i = 0;
+	count = 0;
+	ptr = (char **)malloc(countwords(*s, c) * sizeof(char *)); 
+	if (ptr == NULL)
+		return (NULL);
+	
+	while(i < countwords)
+	{
+		ptr[i] = (char *) malloc((length + 1)* sizeof(char *));
+		if (ptr == NULL)
+			return (NULL);
+		i++;
+	}
+}
 // loop all the string s
 //{ while (*s != '\0')
 // skip the set  if s is \0 and s != c
@@ -45,8 +63,10 @@ int countwords(char const *s, char c)
 // p[i] = 0;
 // }
 
-int main ()
-{
-	printf("%d", countwords("hey hey hey", ' '));
-	return 0;
-}
+
+
+// int main ()
+// {
+// 	printf("%d", countwords("    hey hey hey", ' '));
+// 	return 0;
+// }
