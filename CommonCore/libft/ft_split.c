@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:57:19 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/02 20:58:53 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/02 21:53:31 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static	size_t countwords(const char *s, char c)
 	{
 		while (s[i] == c)
 			i++;
-		if(s[i] != c && s[i] != '\0')
+		if (s[i] != c && s[i] != '\0')
 			count++;
 		while (s[i] != c && s[i] != '\0')
 			i++;
@@ -33,7 +33,7 @@ static	size_t countwords(const char *s, char c)
 	return (count);
 }
 
-static	void *free_arr(char **arr)
+static	void free_arr(char **arr)
 {
 	int	i;
 
@@ -44,7 +44,6 @@ static	void *free_arr(char **arr)
 		i++;
 	}
 	free(arr);
-	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
@@ -55,7 +54,7 @@ char	**ft_split(char const *s, char c)
 	int size;
 	char **arr;
 	
-	arr = malloc((countwords(s,c) + 1) * sizeof(char *));
+	arr = malloc((countwords(s, c) + 1) * sizeof(char *));
 	if(arr == NULL)
 		return (NULL);
 	i = 0;
@@ -63,18 +62,23 @@ char	**ft_split(char const *s, char c)
 	while(s[i] != '\0')
 	{
 		size = 0;
-		while(s[i] == c && s[i] != '\0')
+		while(s[i] == c)
 			i++;
 		if (s[i] == '\0')
 			break ;
 		start = i;
-		while(s[i++] != c) 
+		while(s[i] != c && s[i] != '\0')
+		{
 			size++;
+			i++;
+		}
 		arr[k] = ft_substr(s, start, size);
 		if (arr[k] == NULL)
-			return (free_arr(arr));
+		{
+			free_arr(arr);
+			return (NULL);
+		}
 		k++;
-		i++;
 	}
 	arr[k] = NULL;
 	return (arr);
@@ -84,7 +88,7 @@ int main()
 {
 	char	**str;
 	int		i;
-	char *s = "        I just fixed sigmentation  fault                 ";
+	char *s = "   I just fixed sigmentation  fault     ffdfdfdf    dgdgg      ";
 	str = ft_split(s, ' ');
 	printf("%zu\n", countwords(s,' '));
 	i = 0;
@@ -94,5 +98,6 @@ int main()
 		write(1, "$\n", 2);
 		i++;
 	}
+	free_arr(str);
 	return 0;
 }
