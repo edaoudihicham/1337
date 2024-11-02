@@ -6,13 +6,13 @@
 /*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:57:19 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/02 15:59:39 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/02 16:16:34 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-int countwords(const char *s, char c)
+// #include <stdio.h>
+static int countwords(const char *s, char c)
 {
 	int i;
 	int count;
@@ -35,23 +35,30 @@ char	**ft_split(char const *s, char c)
 {
 	char **ptr;
 	int i;
-	int count;
+	int count = countwords(*s, c);
 	int length;
 
 	i = 0;
-	count = 0;
-	ptr = (char **)malloc(countwords(*s, c) * sizeof(char *)); 
+	ptr = (char **)malloc( count * sizeof(char *)); 
 	if (ptr == NULL)
 		return (NULL);
 	
-	while(i < countwords)
+	while(i < count)
 	{
-		ptr[i] = (char *) malloc((length + 1)* sizeof(char *));
-		if (ptr == NULL)
-			return (NULL);
+		ptr[i] = (char *) malloc((length + 1)* sizeof(char));
+		if (ptr[i] == NULL)
+		{
+			while (i > 0)
+         	   free(ptr[--i]);
+        	free(ptr);
+        	return (NULL);
+		}
 		i++;
 	}
+	
 }
+
+
 // loop all the string s
 //{ while (*s != '\0')
 // skip the set  if s is \0 and s != c
