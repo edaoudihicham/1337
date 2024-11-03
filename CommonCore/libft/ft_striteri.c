@@ -6,22 +6,20 @@
 /*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 17:25:31 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/03 17:58:03 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/03 18:08:05 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// void	touppers(unsigned int i, char *c)
+// void	nextalpha(unsigned int i, char *c)
 // {
-// 	i = 32;
-// 	if (*c >= 'a' && *c <= 'z')
-// 		*c = *c - i;
+// 	*c = *c + i;
 // }
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -34,8 +32,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 
 // int	main(void)
 // {
-// 	char str[] = "hello";
-// 	ft_striteri(str, touppers);
+// 	char str[] = "aaaaa";
+// 	ft_striteri(str, nextalpha);
 // 	printf("%s", str);
 // 	return (0);
 // }

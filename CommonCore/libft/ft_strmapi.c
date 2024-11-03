@@ -6,26 +6,23 @@
 /*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 16:08:06 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/03 17:41:10 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/03 18:08:24 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 // #include <stdio.h>
-// static char toupperss(unsigned int n, char c)
+// static char nextalpha(unsigned int n, char c)
 // {
-// 	n = 32;
-// 	if (c >= 'a' && c <= 'z')
-// 		c = c - n;
-// 	return (c);
+// 	return (c + n);
 // }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	i;
-	size_t	len;
-	char	*str;
+	unsigned int	i;
+	unsigned int	len;
+	char			*str;
 
 	if (s == NULL || f == NULL)
 		return (NULL);
@@ -44,8 +41,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 }
 // int main()
 // {
-//     const char *s = "hello";
-//     char *result = ft_strmapi(s, toupperss);
+//     const char *s = "aaaaa";
+//     char *result = ft_strmapi(s, nextalpha);
 //     if (result != NULL)
 // 	{
 //         printf("%s\n", result);
