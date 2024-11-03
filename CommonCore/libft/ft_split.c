@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:57:19 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/02 21:53:31 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/03 03:32:53 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-#include <stdio.h>
-#include <unistd.h>
+// #include <stdio.h>
+// #include <unistd.h>
 static	size_t countwords(const char *s, char c)
 {
 	size_t i;
@@ -84,20 +84,20 @@ char	**ft_split(char const *s, char c)
 	return (arr);
 }
 
-int main()
-{
-	char	**str;
-	int		i;
-	char *s = "   I just fixed sigmentation  fault     ffdfdfdf    dgdgg      ";
-	str = ft_split(s, ' ');
-	printf("%zu\n", countwords(s,' '));
-	i = 0;
-	while (str[i] != NULL)
-	{
-		write(1, str[i], ft_strlen(str[i]));
-		write(1, "$\n", 2);
-		i++;
-	}
-	free_arr(str);
-	return 0;
-}
+// int main()
+// {
+// 	char	**str;
+// 	int		i;
+// 	char *s = "   I just fixed sigmentation  fault     ffdfdfdf    dgdgg      ";
+// 	str = ft_split(s, ' ');
+// 	printf("%zu\n", countwords(s,' '));
+// 	i = 0;
+// 	while (str[i] != NULL)
+// 	{
+// 		write(1, str[i], ft_strlen(str[i]));
+// 		write(1, "$\n", 2);
+// 		i++;
+// 	}
+// 	free_arr(str);
+// 	return 0;
+// }
