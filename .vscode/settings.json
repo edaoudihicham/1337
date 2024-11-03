@@ -3,6 +3,7 @@
         "header.h": "c",
         "libft.h": "c",
         "__config": "c",
-        "strlcpy.C": "cpp"
+        "strlcpy.C": "cpp",
+        "stdio.h": "c"
     }
 }
