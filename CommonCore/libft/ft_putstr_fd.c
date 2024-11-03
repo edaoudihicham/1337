@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 22:59:11 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/03 23:18:53 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/03 23:20:20 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putstr_fd(char *s, int fd)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		ft_putchar_fd(&s[i], fd);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
 }
