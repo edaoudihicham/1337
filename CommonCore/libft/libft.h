@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:41:21 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/03 17:27:32 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/03 22:30:58 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include <stdlib.h>
+# include <unistd.h>
 // typedef unsigned long size_t;
 
 int		ft_isalpha(int c);
@@ -49,5 +50,6 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_putchar_fd(char c, int fd);
 
 #endif
