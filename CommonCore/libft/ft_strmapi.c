@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 16:08:06 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/03 16:28:50 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/03 16:29:28 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	while(s[i] != '\0')
 	{
 		str[i] = f(i,s[i]);
+		i++;
 	}
 	return (str);
 }
