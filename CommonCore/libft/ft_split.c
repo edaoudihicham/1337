@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:57:19 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/03 03:32:53 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/03 16:50:16 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 // #include <stdio.h>
 // #include <unistd.h>
-static	size_t countwords(const char *s, char c)
+static size_t	countwords(const char *s, char c)
 {
-	size_t i;
-	size_t count;
-	
+	size_t	i;
+	size_t	count;
+
 	i = 0;
 	count = 0;
-	while(s[i])
+	while (s[i])
 	{
 		while (s[i] == c)
 			i++;
@@ -33,7 +33,7 @@ static	size_t countwords(const char *s, char c)
 	return (count);
 }
 
-static	void free_arr(char **arr)
+static void	free_arr(char **arr)
 {
 	int	i;
 
@@ -48,26 +48,26 @@ static	void free_arr(char **arr)
 
 char	**ft_split(char const *s, char c)
 {
-	int i;
-	int k;
-	int start;
-	int size;
-	char **arr;
-	
+	int		i;
+	int		k;
+	int		start;
+	int		size;
+	char	**arr;
+
 	arr = malloc((countwords(s, c) + 1) * sizeof(char *));
-	if(arr == NULL)
+	if (arr == NULL)
 		return (NULL);
 	i = 0;
 	k = 0;
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		size = 0;
-		while(s[i] == c)
+		while (s[i] == c)
 			i++;
 		if (s[i] == '\0')
 			break ;
 		start = i;
-		while(s[i] != c && s[i] != '\0')
+		while (s[i] != c && s[i] != '\0')
 		{
 			size++;
 			i++;
@@ -99,5 +99,5 @@ char	**ft_split(char const *s, char c)
 // 		i++;
 // 	}
 // 	free_arr(str);
-// 	return 0;
+// 	return (0);
 // }
