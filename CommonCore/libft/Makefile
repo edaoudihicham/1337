@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+         #
+#    By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/31 16:42:51 by hdaoudi           #+#    #+#              #
-#    Updated: 2024/11/03 23:10:15 by hdaoudi          ###   ########.fr        #
+#    Updated: 2024/11/04 01:15:28 by hdaoudi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,3 +39,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>  // For standard memmove
 
-#include "../ft_memmove.c"
+#include "../libft/ft_memmove.c"
 
 
 void print_memory(const char *label, const void *mem, size_t n) {
