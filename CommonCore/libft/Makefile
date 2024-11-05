@@ -6,7 +6,7 @@
 #    By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/31 16:42:51 by hdaoudi           #+#    #+#              #
-#    Updated: 2024/11/05 11:24:20 by hdaoudi          ###   ########.fr        #
+#    Updated: 2024/11/05 17:11:56 by hdaoudi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,8 +24,10 @@ SRC = ft_isalnum.c ft_isprint.c ft_memmove.c ft_strlcat.c ft_strnstr.c \
 
 OBJ = $(SRC:.c=.o)
 
-make bonus: ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c /
-	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+make bonus: ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c /
+	ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c /
+	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
+	
 all: $(NAME)
 
 %.o: %.c libft.h
