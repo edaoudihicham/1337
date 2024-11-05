@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:52:23 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/05 17:08:08 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/06 00:38:29 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	t_list	*last;
 
 	if (lst == NULL)
-		return (NULL);
+		return ;
 	if (*lst == NULL)
 	{
 		*lst = new;
