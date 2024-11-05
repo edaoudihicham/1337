@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:53:46 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/31 16:43:25 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/05 18:54:40 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*str;
 
+	if(count > 0 && count > (__SIZE_MAX__/size))
+		return (NULL);
 	str = (unsigned char *)malloc(count * size);
 	if (str == NULL)
 	{
