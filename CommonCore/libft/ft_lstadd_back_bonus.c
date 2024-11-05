@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:52:23 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/06 00:38:29 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/06 00:45:18 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 		return ;
 	}
-	last = lst_last(*lst);
+	last = ft_lstlast(*lst);
 	last->next = new;
-	new->next = NULL;
 }
