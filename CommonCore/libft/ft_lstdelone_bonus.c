@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/05 11:19:52 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/05 11:20:38 by hdaoudi          ###   ########.fr       */
+/*   Created: 2024/11/05 23:21:28 by hdaoudi           #+#    #+#             */
+/*   Updated: 2024/11/05 23:43:17 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	
+	if (lst != NULL || del != NULL)
+        return;
+    del(lst->content);
+    free(lst);
 }
