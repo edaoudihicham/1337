@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:42:34 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/07 10:11:39 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/07 12:01:51 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	ft_lstsize(t_list *lst)
 // node2->next = node3; // Link node2 to node3
 
 // int list_size = ft_lstsize(node1); // Should return 3,
-as there are 3 nodes in the list
+//as there are 3 nodes in the list
 	// printf("List size: %d\n", list_size); // Output: List size: 3
 	// while (current != NULL)
 	// {
