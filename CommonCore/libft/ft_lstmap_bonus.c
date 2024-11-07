@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:22:41 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/07 12:10:36 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/07 12:14:03 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 			newnode = ft_lstnew(f(lst->content));
 		else
 			newnode = ft_lstnew(lst->content);
-		if (newnode == NULL)
+		if (newnode != NULL)
 		{
 			ft_lstclear(&newlist, del);
 			return (NULL);
