@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:48:28 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/31 17:13:08 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/07 22:29:37 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	unsigned int	j;
 	unsigned int	destlen;
 	unsigned int	srclen;
-
+	
 	i = 0;
 	j = 0;
 	while (dst[j] != '\0')
