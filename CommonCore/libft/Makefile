@@ -6,7 +6,7 @@
 #    By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/31 16:42:51 by hdaoudi           #+#    #+#              #
-#    Updated: 2024/11/06 11:40:56 by hdaoudi          ###   ########.fr        #
+#    Updated: 2024/11/07 11:59:07 by hdaoudi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,8 +24,7 @@ SRC = ft_isalnum.c ft_isprint.c ft_memmove.c ft_strlcat.c ft_strnstr.c \
 	
 SRC_BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 	ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
-	ft_lstclear_bonus.c 
-	# ft_lstiter_bonus.c ft_lstmap_bonus.c
+	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 OBJ = $(SRC:.c=.o)
 
