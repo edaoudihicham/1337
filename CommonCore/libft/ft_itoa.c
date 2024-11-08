@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:44:02 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/08 19:30:49 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 19:36:35 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 // #include <stdio.h>
 // #include <limits.h>
-
 static int	slen(int n)
 {
 	long	i;
