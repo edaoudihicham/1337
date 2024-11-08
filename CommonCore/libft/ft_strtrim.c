@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 21:53:51 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/01 18:29:19 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 14:35:31 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start;
 	size_t	finish;
 
-	if (s1 == NULL || set == NULL)
+	if (s1 == NULL || set == NULL || s1[0] == '\0')
 		return (ft_strdup(""));
 	i = 0;
 	while (isfound(s1[i], set))

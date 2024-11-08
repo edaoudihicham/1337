@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdaoudi <hdaoudi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:41:21 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/05 17:09:39 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 00:39:36 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <limits.h>
 // typedef unsigned long size_t;
 
 int		ft_isalpha(int c);

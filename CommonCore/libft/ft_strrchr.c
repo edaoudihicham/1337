@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:51:45 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/31 20:09:48 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 14:23:59 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,7 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	len;
 
-	len = 0;
-	while (s[len])
-	{
-		len++;
-	}
+	len = ft_strlen(s);
 	if ((unsigned char)c == '\0')
 		return ((char *)&s[len]);
 	while (len--)

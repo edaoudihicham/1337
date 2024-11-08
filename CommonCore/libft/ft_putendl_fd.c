@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 23:04:27 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/07 10:10:42 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 02:13:03 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (fd < 0)
+	if (fd < 0 || s == NULL)
 		return ;
 	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);

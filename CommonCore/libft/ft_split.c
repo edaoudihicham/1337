@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:57:19 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/06 11:40:32 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 02:16:09 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ char	**ft_split(char const *s, char c)
 	int		size;
 	char	**arr;
 
+	if (s == NULL)
+		return (NULL);
 	arr = malloc((countwords(s, c) + 1) * sizeof(char *));
 	if (arr == NULL)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:55:18 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/10/31 16:40:00 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 13:11:29 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,20 +19,10 @@ char	*ft_strdup(const char *s1)
 
 	len = 0;
 	while (s1[len])
-	{
 		len++;
-	}
 	str = (char *)malloc((len + 1) * sizeof(char));
 	if (str == NULL)
-	{
 		return (NULL);
-	}
-	str[len] = s1[len];
-	len = 0;
-	while (s1[len])
-	{
-		str[len] = s1[len];
-		len++;
-	}
+	ft_strlcpy(str, s1, len + 1);
 	return (str);
 }

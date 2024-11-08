@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:44:02 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/01 18:16:34 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 01:53:39 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,9 @@ char	*ft_itoa(int n)
 	return (filler(i, n, isnegative));
 }
 // #include <stdio.h>
-// int main()
+
+// int	main(void)
 // {
-// 	printf("%s", ft_itoa(-00000001));
+// 	printf("%s", ft_itoa(-5));
 // 	return (0);
 // }

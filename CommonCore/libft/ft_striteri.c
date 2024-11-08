@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 17:25:31 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/06 11:40:37 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 13:16:14 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
+	if (s == NULL || f == NULL)
+		return ;
 	i = 0;
 	while (s[i] != '\0')
 	{
