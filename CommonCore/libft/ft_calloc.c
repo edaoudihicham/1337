@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:53:46 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/08 01:29:24 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 18:35:39 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	if (size != 0 && count > (__SIZE_MAX__ / size))
+	if (size != 0 && count > (SIZE_MAX / size))
 		return (NULL);
 	ptr = malloc(count * size);
 	if (ptr == NULL)

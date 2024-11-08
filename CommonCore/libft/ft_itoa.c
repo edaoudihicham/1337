@@ -6,68 +6,70 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:44:02 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/08 01:53:39 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 19:30:49 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// #include <stdio.h>
 // #include <limits.h>
 
 static int	slen(int n)
 {
-	int	i;
+	long	i;
+	long	nbr;
 
+	nbr = n;
 	i = 0;
-	while (n > 0)
+	if (nbr == 0)
+		nbr = 1;
+	if (nbr < 0)
 	{
-		n /= 10;
+		nbr = nbr * (-1);
+		i += 1;
+	}
+	while (nbr > 0)
+	{
+		nbr /= 10;
 		i++;
 	}
 	return (i);
 }
 
-static char	*filler(int i, int n, int isnegative)
+char	*ft_itoa(int n)
 {
 	char	*str;
+	int		i;
+	int		len;
+	long	nbr;
 
-	str = (char *)malloc((i + 1) * sizeof(char));
+	if (n == 0)
+		return (ft_strdup("0"));
+	len = slen(n);
+	i = 0;
+	nbr = n;
+	str = malloc(sizeof(char) * ((len + 1)));
 	if (str == NULL)
 		return (NULL);
-	str[i--] = '\0';
-	while (n > 0)
+	str[len--] = '\0';
+	if (n < 0)
 	{
-		str[i--] = (n % 10) + '0';
-		n /= 10;
-	}
-	if (isnegative == 1)
+		nbr *= -1;
 		str[0] = '-';
+	}
+	while (nbr)
+	{
+		str[len--] = nbr % 10 + '0';
+		nbr /= 10;
+	}
 	return (str);
 }
 
-char	*ft_itoa(int n)
-{
-	int	isnegative;
-	int	i;
-
-	isnegative = 0;
-	i = slen(n);
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	else if (n == 0)
-		return (ft_strdup("0"));
-	if (n < 0)
-	{
-		n *= -1;
-		isnegative = 1;
-		i = 1 + slen(n);
-	}
-	return (filler(i, n, isnegative));
-}
 // #include <stdio.h>
 
 // int	main(void)
 // {
-// 	printf("%s", ft_itoa(-5));
+// 	printf("%s", ft_itoa(INT_MIN));
 // 	return (0);
 // }

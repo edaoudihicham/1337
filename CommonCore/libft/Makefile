@@ -6,7 +6,7 @@
 #    By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/31 16:42:51 by hdaoudi           #+#    #+#              #
-#    Updated: 2024/11/07 11:59:07 by hdaoudi          ###   ########.fr        #
+#    Updated: 2024/11/08 18:13:04 by hdaoudi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,8 +32,8 @@ OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 all: $(NAME)
 
-bonus: $(OBJ) $(OBJ_BONUS)
-	ar -rcs $(NAME) $(OBJ) $(OBJ_BONUS)
+bonus: $(OBJ_BONUS)
+	ar -rcs $(NAME) $(OBJ_BONUS)
 	
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@ -I./
