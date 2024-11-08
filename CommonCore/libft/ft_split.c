@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:57:19 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/08 02:16:09 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/08 16:53:31 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,35 +46,24 @@ static void	free_arr(char **arr)
 	free(arr);
 }
 
-char	**ft_split(char const *s, char c)
+static char	**fill(char **arr, char const *s, char c)
 {
-	int		i;
-	int		k;
-	int		start;
-	int		size;
-	char	**arr;
+	int	i;
+	int	k;
+	int	start;
 
-	if (s == NULL)
-		return (NULL);
-	arr = malloc((countwords(s, c) + 1) * sizeof(char *));
-	if (arr == NULL)
-		return (NULL);
 	i = 0;
 	k = 0;
 	while (s[i] != '\0')
 	{
-		size = 0;
 		while (s[i] == c)
 			i++;
 		if (s[i] == '\0')
 			break ;
 		start = i;
 		while (s[i] != c && s[i] != '\0')
-		{
-			size++;
 			i++;
-		}
-		arr[k] = ft_substr(s, start, size);
+		arr[k] = ft_substr(s, start, i - start);
 		if (arr[k] == NULL)
 		{
 			free_arr(arr);
@@ -84,6 +73,18 @@ char	**ft_split(char const *s, char c)
 	}
 	arr[k] = NULL;
 	return (arr);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**arr;
+
+	if (s == NULL)
+		return (NULL);
+	arr = malloc((countwords(s, c) + 1) * sizeof(char *));
+	if (arr == NULL)
+		return (NULL);
+	return (fill(arr, s, c));
 }
 
 // int main()
