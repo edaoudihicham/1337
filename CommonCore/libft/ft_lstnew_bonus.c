@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:19:36 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/08 01:57:17 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/10 18:28:06 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,3 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
-// #include <stdio.h>
-// int main ()
-// {
-// 	t_list *new_node = ft_lstnew("Hello, world!");
-// if (new_node != NULL)
-// {
-//     printf("Content: %s\n", (char *)new_node->content);
-// }
-// return (0);
-// }

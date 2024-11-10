@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:42:34 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/07 12:01:51 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/10 18:29:42 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,25 +26,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (size);
 }
-
-// #include <stdio.h>
-// int main ()
-// {
-// t_list *node1 = ft_lstnew("Node 1");
-// t_list *node2 = ft_lstnew("Node 2");
-// t_list *node3 = ft_lstnew("Node 3");
-// t_list *current = node1;
-// node1->next = node2; // Link node1 to node2
-// node2->next = node3; // Link node2 to node3
-
-// int list_size = ft_lstsize(node1); // Should return 3,
-//as there are 3 nodes in the list
-	// printf("List size: %d\n", list_size); // Output: List size: 3
-	// while (current != NULL)
-	// {
-	// 	printf("node: %s\n", (char *)current->content);
-			//print all nodes content
-	// 	current = current->next;
-	// }
-
-	// }
