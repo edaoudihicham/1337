@@ -6,12 +6,11 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 21:53:51 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/08 14:35:31 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/11 13:37:51 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include <stdio.h>
 
 static int	isfound(char c, const char *set)
 {
@@ -55,14 +54,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[finish] = '\0';
 	return (str);
 }
-
-// int main()
-// {
-// 	printf("%s", ft_strtrim("shichams","    hm    "));
-// 	return 0;
-// }
-
-// if s1 and set have the same chars
-// if both are empty only '\0'
-// if both are NULL
-// one character found, means start = finish and finish doesn't equal zero

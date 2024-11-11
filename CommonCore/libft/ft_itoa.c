@@ -6,14 +6,12 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:44:02 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/09 15:03:58 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/11 13:36:01 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// #include <stdio.h>
-// #include <limits.h>
 static int	slen(int n)
 {
 	long	i;
@@ -64,11 +62,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	printf("%s", ft_itoa(INT_MIN));
-// 	return (0);
-// }

@@ -6,13 +6,12 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:53:28 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/08 18:37:24 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/11 13:35:33 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// #include <stdio.h>
 int	ft_atoi(const char *str)
 {
 	int	i;
@@ -37,8 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * r);
 }
-// int main ()
-// {
-// 	printf("%d\n", atoi("2147483647"));
-// 	printf("%d", ft_atoi("2147483647"));
-// }

@@ -6,17 +6,11 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 16:08:06 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/06 11:40:43 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/11 13:37:38 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// #include <stdio.h>
-// static char nextalpha(unsigned int n, char c)
-// {
-// 	return (c + n);
-// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -39,14 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-// int main()
-// {
-//     const char *s = "aaaaa";
-//     char *result = ft_strmapi(s, nextalpha);
-//     if (result != NULL)
-// 	{
-//         printf("%s\n", result);
-//         free(result);
-// 	}
-//     return (0);
-// }

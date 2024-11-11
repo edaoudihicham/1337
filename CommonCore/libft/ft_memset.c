@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:32:35 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/10 15:02:45 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/11 13:36:26 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-// #include <stdio.h>
-// int main ()
-// {
-// 	char arr[5];
-// 	ft_memset(&arr[0],'-',1);
-// 	ft_memset(&arr[1],'1',1);
-// 	ft_memset(&arr[2],'3',1);
-// 	ft_memset(&arr[3],'3',1);
-// 	ft_memset(&arr[4],'7',1);
-// 	printf("%s", arr);
-// 	return 0;
-// }

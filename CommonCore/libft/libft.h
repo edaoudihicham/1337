@@ -6,18 +6,15 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:41:21 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/08 00:39:36 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/11 13:40:23 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <limits.h>
-// typedef unsigned long size_t;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

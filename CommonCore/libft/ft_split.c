@@ -6,14 +6,12 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:57:19 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/08 16:53:31 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/11 13:37:02 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// #include <stdio.h>
-// #include <unistd.h>
 static size_t	countwords(const char *s, char c)
 {
 	size_t	i;
@@ -86,21 +84,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (fill(arr, s, c));
 }
-
-// int main()
-// {
-// 	char	**str;
-// 	int		i;
-// 	char *s = "   I just fixed sigmentation  fault     ffdfdfdf    dgdgg      ";
-// 	str = ft_split(s, ' ');
-// 	printf("%zu\n", countwords(s,' '));
-// 	i = 0;
-// 	while (str[i] != NULL)
-// 	{
-// 		write(1, str[i], ft_strlen(str[i]));
-// 		write(1, "$\n", 2);
-// 		i++;
-// 	}
-// 	free_arr(str);
-// 	return (0);
-// }
