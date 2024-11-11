@@ -6,7 +6,7 @@
 /*   By: hdaoudi <hdaoudi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:44:02 by hdaoudi           #+#    #+#             */
-/*   Updated: 2024/11/11 13:36:01 by hdaoudi          ###   ########.fr       */
+/*   Updated: 2024/11/11 15:52:48 by hdaoudi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,12 @@ static int	slen(int n)
 char	*ft_itoa(int n)
 {
 	char	*str;
-	int		i;
 	int		len;
 	long	nbr;
 
 	if (n == 0)
 		return (ft_strdup("0"));
 	len = slen(n);
-	i = 0;
 	nbr = n;
 	str = malloc(sizeof(char) * ((len + 1)));
 	if (str == NULL)
